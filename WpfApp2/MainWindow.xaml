@@ -1,0 +1,78 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Cooking" Height="526" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Menu" Name="menu" >
+                <Grid>
+                </Grid>
+
+            </TabItem>
+            <TabItem Header="Espace Client" Name="espace_client">
+                <Grid Name="grid_id" Visibility="Visible">
+                    <Label Name="identification_client" Content="Identification :" HorizontalAlignment="Left" Margin="161,24,0,0" VerticalAlignment="Top" Height="32" Width="213"/>
+                    <Label Content="Nom :" HorizontalAlignment="Left" Margin="33,143,0,0" VerticalAlignment="Top" Width="63"/>
+                    <TextBox Name="nom_client" HorizontalAlignment="Left" Height="26" Margin="131,143,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="141" />
+                    <TextBox Name="prenom_client" HorizontalAlignment="Left" Height="26" Margin="131,211,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="141"/>
+                    <Label Content="Prénom :" HorizontalAlignment="Left" Margin="33,211,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Identifiant :" HorizontalAlignment="Left" Margin="33,78,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="choix_id_client" HorizontalAlignment="Left" Margin="131,82,0,0" VerticalAlignment="Top" Width="141"/>
+                    <Button Name="valider_identification" Content="Valider" HorizontalAlignment="Left" Margin="161,331,0,0" VerticalAlignment="Top" Width="84" Height="24" Click="connexion_client"/>
+                    <Label Name="mdp_label" Content="Mot de Passe :" HorizontalAlignment="Left" Margin="27,273,0,0" VerticalAlignment="Top"/>
+                    <PasswordBox Name="mdp_client" HorizontalAlignment="Left" Margin="131,273,0,0" VerticalAlignment="Top" Width="141" Height="26"/>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <Label Name="label_adresse" Content="Adresse :" HorizontalAlignment="Left" Margin="430,78,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+                    <Label Name="adresse_client" Content="" HorizontalAlignment="Left" Margin="506,78,0,0" VerticalAlignment="Top" Height="39" Width="208" Visibility="Hidden"/>
+                    <Label Name="nom_client_identifie" Content="" HorizontalAlignment="Left" Height="26" Margin="131,143,0,0" VerticalAlignment="Top" Width="141" Visibility="Hidden" />
+                    <Label Name="prenom_client_identifie" Content="" HorizontalAlignment="Left" Height="26" Margin="131,211,0,0" VerticalAlignment="Top" Width="141" Visibility="Hidden"/>
+                    <Label Name="label_solde" Content="Solde (Cook) :" HorizontalAlignment="Left" Margin="430,211,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+                    <Label Name="valeur_solde" Content="" HorizontalAlignment="Left" Margin="547,211,0,0" VerticalAlignment="Top" Width="134" Visibility="Hidden"/>
+                    <Label Name="choix_id_client_label" Content="" HorizontalAlignment="Left" Margin="131,82,0,0" VerticalAlignment="Top" Width="141" Visibility="Hidden"/>
+                    <Label Name="telephone_label" Content="Telephone :" HorizontalAlignment="Left" Margin="430,133,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+                    <Label Name="telephone_value" Content="" HorizontalAlignment="Left" Margin="521,133,0,0" VerticalAlignment="Top" Width="160" Visibility="Hidden"/>
+                    <Label Name="label_inscription" Content="Inscription :" HorizontalAlignment="Left" Margin="547,24,0,0" VerticalAlignment="Top" Height="31" Visibility="Visible"/>
+                    <Label Name="label_nom_insc" Content="Nom :" HorizontalAlignment="Left" Margin="407,52,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+                    <Label Name="label_prenom_insc" Content="Prénom :" HorizontalAlignment="Left" Margin="407,91,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+                    <Label Name="label_addr_insc" Content="Adresse :" HorizontalAlignment="Left" Margin="406,133,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+                    <Label Name="label_ville_insc" Content="Ville :" HorizontalAlignment="Left" Margin="406,180,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+                    <Label Name="cdr_label" Content="Souhaitez-vous être également créateur de recette ?" HorizontalAlignment="Left" Margin="449,255,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+                    <Label Name="saisie1pass" Content="Saissir mot de passe :" HorizontalAlignment="Left" Margin="407,329,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+                    <Label Name="saisie2pass" Content="Saisir à nouveau le mot de passe :" HorizontalAlignment="Left" Margin="407,373,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+                    <Button Name="button_inscription" Content="S'inscrire" HorizontalAlignment="Left" Margin="547,421,0,0" VerticalAlignment="Top" Width="75" Click="inscription_client" Visibility="Visible"/>
+                    <TextBox Name="nom_inscription" HorizontalAlignment="Left" Height="23" Margin="488,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="226" Visibility="Visible"/>
+                    <TextBox Name="prenom_inscription" HorizontalAlignment="Left" Height="23" Margin="488,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="226" Visibility="Visible"/>
+                    <TextBox Name="adresse_inscription" HorizontalAlignment="Left" Height="23" Margin="488,133,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="226" Visibility="Visible"/>
+                    <TextBox Name="ville_inscription" HorizontalAlignment="Left" Height="23" Margin="488,180,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="226" Visibility="Visible"/>
+                    <ComboBox Name="choix_cdr" HorizontalAlignment="Left" Margin="521,288,0,0" VerticalAlignment="Top" Width="153" Visibility="Visible"/>
+                    <PasswordBox Name="mdp_client_1" HorizontalAlignment="Left" Margin="573,329,0,0" VerticalAlignment="Top" Width="141" Height="26" Visibility="Visible"/>
+                    <PasswordBox Name="mdp_client_2" HorizontalAlignment="Left" Margin="612,373,0,0" VerticalAlignment="Top" Width="141" Height="26" Visibility="Visible"/>
+                    <Label Name="label_tel" Content="Telephone :" HorizontalAlignment="Left" Margin="406,224,0,0" VerticalAlignment="Top" Visibility="Visible"/>
+                    <TextBox Name="tel_inscription" HorizontalAlignment="Left" Height="23" Margin="488,227,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="226" Visibility="Visible"/>
+                    <Button Name="button_commander" Content="Commander" HorizontalAlignment="Left" Margin="327,358,0,0" VerticalAlignment="Top" Width="75" Click="acces_pagecommande" Visibility="Hidden"/>
+
+
+
+                </Grid>
+
+            </TabItem>
+            <TabItem Header="Espace Administratif" Name="espace_admin"></TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
